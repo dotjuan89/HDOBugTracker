@@ -31,3 +31,6 @@ Please run following command to download django package:
 2. "cd" to project root directory -> HDOBUGTRACKER
 3. Run "py manage.py runserver 8080
 4. Open "chrome" or "firefox" and enter "localhost:8080" to view page
+
+## Added Django setting/admin/model.py files
+Added database files
