@@ -1,32 +1,46 @@
+{% load static %}
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<title>Bug Tracker</title>
-	</head>
-	<body class="login-page">
-		<div class="appication-main">
-			<form>
-				<div class="auth-form-header">
-					<h1>Sign in to HD-Only BugTracker</h1>
-				</div>
-				<div class="auth-form-body">
-					<label for="login_field">
-						Username
-					</label>
-						<input type="text" name="login" id="login_field" autocomplete="on">
-						<label for="password">
-							Password
-						<input type="password" name="password" id="password" class="form-control" autocomplete="current-password">
-						<a class="label-link" href="/password_reset">Forgot password?
-						</a>
-					</label>
-					<input type="submit" name="commit" value="Sign in">
-				</div>
-			</form>
-			<p class="login-callout">
-			New User?
-				<a href="/join?source=login">Create an account</a>
-			</p>
-		</div>
-	</body>
+<html>
+<head>   
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	
+	<link rel="stylesheet" href="{% static 'css/loginstyle.css' %}">
+</head>
+<body>	
+
+
+<div class="sidenav">
+         <div class="login-main-text">
+            <h2>HD-Only<br>Bug Tracker</h2>
+            <p>Login or register from here to access.</p>
+         </div>
+      </div>
+      <div class="main">
+         <div class="col-md-6 col-sm-12">
+            <div class="login-form">
+               <form>
+                  <div class="form-group">
+                     <label>User Name</label>
+                     <input type="text" class="form-control" placeholder="User Name">
+                  </div>
+                  <div class="form-group">
+                     <label>Password</label>
+                     <input type="password" class="form-control" placeholder="Password">
+                  </div>
+                  <button type="submit" class="btn btn-black">Login</button>
+                  <button type="submit" class="btn btn-secondary">Register</button>
+               </form>
+            </div>
+         </div>
+      </div>
+
+
+</body>
+
+
 </html>
